@@ -1,6 +1,14 @@
 # Sara - the Rasa Demo Bot, commands for building and running docker containers
-This is a dockernized rasa demo, which shows how does rasa works, and how to run it. Just simply run below docker-compose command.
+This is a dockernized rasa demo, which shows how does rasa work, Just simply run below docker-compose command.
 
+Clone the project and train a model
+```
+git clone git@github.com:GuoqiangJia/rasa-demo-dockernized.git
+pip install -r requirements.txt
+rasa train
+```
+
+Build a docker image for Actions, and start up action server & rasa server 
 ```
 docker-compose up -d
 ```
